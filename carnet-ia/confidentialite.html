@@ -5,129 +5,136 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carnet IA — Politique de confidentialité</title>
 <style>
-  :root { --bleu: #1F3A5F; --or: #B5781F; --fond: #F4F6FA; --texte: #222; --doux: #555; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--fond); color: var(--texte); font-family: Roboto, Arial, sans-serif; line-height: 1.6; }
-  header { background: var(--bleu); color: #fff; padding: 28px 16px; }
-  header h1 { margin: 0; font-size: 1.5rem; }
-  header p { margin: 6px 0 0; opacity: .85; }
-  main { max-width: 760px; margin: 0 auto; padding: 16px; }
-  section { background: #fff; border-radius: 14px; padding: 18px 20px; margin: 14px 0; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
-  h2 { color: var(--bleu); font-size: 1.15rem; margin: 0 0 8px; }
-  ul { padding-left: 20px; margin: 6px 0; }
-  li { margin: 4px 0; }
-  a { color: var(--or); }
-  .note { color: var(--doux); font-size: .95rem; }
-  footer { text-align: center; color: var(--doux); font-size: .9rem; padding: 24px 16px 40px; }
+  :root { --texte:#1f2937; --doux:#4b5563; --bleu:#1a3a8a; --fond:#ffffff; --ligne:#e5e7eb; }
+  body { margin:0; background:var(--fond); color:var(--texte); font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height:1.6; }
+  main { max-width:820px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { color:var(--bleu); font-size:1.8rem; margin:.2em 0; }
+  h2 { color:var(--bleu); font-size:1.2rem; margin-top:2em; border-bottom:1px solid var(--ligne); padding-bottom:.3em; }
+  p, li { color:var(--texte); }
+  .doux { color:var(--doux); font-size:.95rem; }
+  nav a { color:var(--bleu); margin-right:16px; }
+  hr { border:none; border-top:2px solid var(--ligne); margin:48px 0; }
 </style>
 </head>
 <body>
-<header>
-  <h1>Carnet IA — Politique de confidentialité</h1>
-  <p>Dernière mise à jour : 16 octobre 2026</p>
-</header>
 <main>
+<nav><a href="#fr">Français</a><a href="#en">English</a></nav>
 
-<section>
-  <h2>1. Qui sommes-nous ?</h2>
-  <p>Carnet IA est une application Android de gestion d'atelier de couture (clients, mesures, commandes, agenda, personnel, statistiques, taille par photo). Elle est développée par <strong>Abdou Wahabou Traoré (Wahab Couture)</strong>, au Mali.</p>
-  <p>Contact : <a href="mailto:wahabstyle54@gmail.com">wahabstyle54@gmail.com</a></p>
+<section id="fr">
+<h1>Politique de confidentialité — Carnet IA</h1>
+<p class="doux">Dernière mise à jour : 20 novembre 2026</p>
+
+<p>Carnet IA est une application de gestion d'atelier de couture (agenda, commandes, clients, mesures, personnel, statistiques, mesures par photo, formules en vidéo). Elle est éditée par <strong>Wahab Couture</strong> (Abdou Wahabou Traoré, Bamako, Mali). Cette page explique quelles données l'application utilise, pourquoi, et comment vous gardez le contrôle.</p>
+
+<h2>1. Les données que nous traitons</h2>
+<ul>
+  <li><strong>Votre compte</strong> : numéro de téléphone et mot de passe, ou votre compte Google ; une adresse e-mail de secours si vous la donnez (pour récupérer un mot de passe oublié).</li>
+  <li><strong>Les données de votre atelier</strong>, que vous saisissez vous-même : nom et logo de l'atelier, clients (nom, téléphone, adresse si donnée, recommandations), mesures, commandes, rendez-vous, paiements reçus, dépenses, employés, travaux et paie.</li>
+  <li><strong>Les photos</strong> que vous ajoutez : tissus, modèles, logo.</li>
+  <li><strong>Les photos de mesure par IA</strong> : quand vous utilisez « Mesures photo IA », la photo est envoyée de façon sécurisée au service d'intelligence artificielle de Google (Firebase AI Logic) uniquement pour estimer la taille de vêtement. C'est la taille obtenue qui est enregistrée dans la fiche du client.</li>
+  <li><strong>Les achats</strong> : les abonnements et les vidéos des formules sont payés par Google Play. Nous ne voyons jamais vos numéros de carte bancaire ; nous recevons seulement la confirmation de l'achat.</li>
+  <li><strong>Les rapports de plantage</strong> : si l'application plante, Firebase Crashlytics nous envoie un rapport technique (modèle du téléphone, version d'Android, endroit du code en cause) pour corriger le problème.</li>
+  <li><strong>La protection de l'application</strong> : Firebase App Check et Play Integrity vérifient que l'application est authentique, pour empêcher les abus.</li>
+</ul>
+
+<h2>2. Pourquoi nous utilisons ces données</h2>
+<ul>
+  <li>Faire fonctionner l'application et ses modules.</li>
+  <li>Sauvegarder vos données en ligne, pour les retrouver sur un autre téléphone.</li>
+  <li>Partager avec vos employés et votre assistant uniquement ce que vous décidez de leur envoyer.</li>
+  <li>Gérer votre abonnement et vos achats.</li>
+  <li>Corriger les erreurs et sécuriser l'application.</li>
+</ul>
+<p>Nous <strong>ne vendons pas</strong> vos données, nous <strong>n'affichons pas de publicité</strong> et nous n'utilisons pas vos données pour de la publicité.</p>
+
+<h2>3. Où sont gardées vos données</h2>
+<p>Vos données sont enregistrées sur votre téléphone et sauvegardées dans les services de Google Firebase (Authentication, Cloud Firestore), avec des connexions chiffrées. Seuls vous et les personnes de votre atelier à qui vous donnez un accès peuvent les consulter.</p>
+
+<h2>4. Les services d'autres entreprises</h2>
+<p>Carnet IA utilise des services de Google : Firebase Authentication, Cloud Firestore, Firebase AI Logic, Firebase Crashlytics, Firebase App Check, Google Play Billing et Google Play Integrity. Ces services traitent les données selon les règles de confidentialité de Google : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+<h2>5. Vos employés et votre assistant</h2>
+<p>Le propriétaire de l'atelier peut inviter des employés et un assistant avec un code d'atelier. Un employé ne voit jamais le nom ni le téléphone de vos clients, ni les prix ; il voit seulement ses propres travaux et ce que vous lui envoyez. Le propriétaire peut retirer un accès à tout moment.</p>
+
+<h2>6. Durée de conservation</h2>
+<p>Vos données sont gardées tant que votre compte existe. À la fin d'un abonnement, l'accès est limité mais vos données sont conservées, pour que vous les retrouviez si vous vous réabonnez. Quand vous supprimez votre compte, vos données sont effacées.</p>
+
+<h2>7. Supprimer votre compte et vos données</h2>
+<ul>
+  <li><strong>Dans l'application</strong> : menu ☰ → <em>Mon compte</em> → <em>Supprimer mon compte</em>.</li>
+  <li><strong>Par e-mail</strong> : écrivez à <a href="mailto:wahabstyle54@gmail.com">wahabstyle54@gmail.com</a> depuis le numéro ou l'adresse liés à votre compte, avec l'objet « Suppression de compte Carnet IA ». La suppression est faite sous 30 jours.</li>
+</ul>
+<p>Vous pouvez aussi demander une copie ou la correction de vos données à la même adresse.</p>
+
+<h2>8. Enfants</h2>
+<p>Carnet IA est destiné aux professionnels de la couture âgés de 18 ans et plus. L'application ne s'adresse pas aux enfants.</p>
+
+<h2>9. Modifications</h2>
+<p>Nous pouvons mettre à jour cette politique. La date de dernière mise à jour est indiquée en haut de la page.</p>
+
+<h2>10. Contact</h2>
+<p>Wahab Couture — Bamako, Mali<br>
+E-mail : <a href="mailto:wahabstyle54@gmail.com">wahabstyle54@gmail.com</a></p>
 </section>
 
-<section>
-  <h2>2. Les données enregistrées</h2>
-  <p><strong>Le compte de l'atelier</strong></p>
-  <ul>
-    <li>le numéro de téléphone et le mot de passe (le mot de passe est géré et protégé par Google Firebase : nous ne le voyons jamais) ;</li>
-    <li>ou le compte Google, si vous choisissez de vous connecter avec Google ;</li>
-    <li>l'adresse e-mail de secours, si vous la donnez, pour retrouver votre mot de passe ;</li>
-    <li>le nom, le téléphone, l'adresse et le logo de l'atelier.</li>
-  </ul>
-  <p><strong>Les données que l'atelier saisit</strong></p>
-  <ul>
-    <li>les clients : nom, numéro de téléphone, adresse (facultative) ;</li>
-    <li>leurs mesures et leur taille ;</li>
-    <li>les commandes : prix, paiements, dates de livraison, photos des tissus et des modèles, recommandations écrites et vocales ;</li>
-    <li>le personnel : nom, téléphone, travaux réalisés, paiements ;</li>
-    <li>les dépenses et rendez-vous de l'atelier.</li>
-  </ul>
-  <p class="note">Ces données appartiennent à l'atelier. Le propriétaire de l'atelier est responsable d'informer ses clients et son personnel qu'il les enregistre dans Carnet IA.</p>
-</section>
+<hr>
 
-<section>
-  <h2>3. Pourquoi ces données sont utilisées</h2>
-  <ul>
-    <li>faire fonctionner l'application (fiches clients, commandes, reçus, agenda, statistiques) ;</li>
-    <li>sauvegarder le carnet en ligne, pour le retrouver sur un autre téléphone ;</li>
-    <li>partager avec les employés et l'assistant de l'atelier seulement ce que le propriétaire choisit de leur envoyer ;</li>
-    <li>gérer l'essai gratuit et l'abonnement ;</li>
-    <li>envoyer des rappels (livraisons proches, fin d'abonnement).</li>
-  </ul>
-  <p><strong>Nous ne vendons aucune donnée, nous ne faisons pas de publicité et nous ne partageons rien avec des annonceurs.</strong></p>
-</section>
+<section id="en" lang="en">
+<h1>Privacy Policy — Carnet IA</h1>
+<p class="doux">Last updated: November 20, 2026</p>
 
-<section>
-  <h2>4. Mesures photo IA</h2>
-  <ul>
-    <li>Quand vous utilisez « Mesures photo IA », la photo est envoyée au service d'intelligence artificielle de Google (Gemini, par Firebase AI Logic), seulement pour estimer la taille de vêtement.</li>
-    <li>Carnet IA ne conserve pas ces photos : elles sont effacées du téléphone en quittant l'écran.</li>
-    <li>L'application garde seulement la taille trouvée et une « empreinte » numérique de la photo (une suite de chiffres, qui n'est pas une image et ne permet pas de reconstituer la photo), pour redonner la même taille à la photo suivante du même client.</li>
-    <li>L'IA n'identifie pas la personne et ne décrit pas son visage.</li>
-  </ul>
-</section>
+<p>Carnet IA is a tailoring workshop management app (agenda, orders, clients, measurements, staff, statistics, photo-based sizing, pattern-formula videos). It is published by <strong>Wahab Couture</strong> (Abdou Wahabou Traoré, Bamako, Mali). This page explains what data the app uses, why, and how you stay in control.</p>
 
-<section>
-  <h2>5. Où sont gardées les données</h2>
-  <ul>
-    <li>sur votre téléphone ;</li>
-    <li>dans votre compte en ligne, sur les serveurs de <strong>Google Firebase</strong> (Firestore et Authentication). Les échanges avec ces serveurs sont chiffrés.</li>
-  </ul>
-  <p>Seuls le propriétaire de l'atelier, et les employés ou l'assistant qu'il autorise, peuvent accéder aux données de son atelier. Un employé ne voit jamais le nom ni le téléphone des clients.</p>
-</section>
+<h2>1. Data we process</h2>
+<ul>
+  <li><strong>Your account</strong>: phone number and password, or your Google account; a backup email address if you provide one (to recover a forgotten password).</li>
+  <li><strong>Your workshop data</strong>, entered by you: workshop name and logo, clients (name, phone, address if provided, notes), measurements, orders, appointments, payments received, expenses, staff, work and pay.</li>
+  <li><strong>Photos</strong> you add: fabrics, models, logo.</li>
+  <li><strong>AI sizing photos</strong>: when you use “AI photo measurements”, the photo is sent securely to Google's AI service (Firebase AI Logic) only to estimate the garment size. The resulting size is saved in the client's file.</li>
+  <li><strong>Purchases</strong>: subscriptions and formula videos are paid through Google Play. We never see your card numbers; we only receive the purchase confirmation.</li>
+  <li><strong>Crash reports</strong>: if the app crashes, Firebase Crashlytics sends us a technical report (device model, Android version, location in the code) so we can fix it.</li>
+  <li><strong>App protection</strong>: Firebase App Check and Play Integrity verify that the app is genuine, to prevent abuse.</li>
+</ul>
 
-<section>
-  <h2>6. Paiements</h2>
-  <ul>
-    <li>Le paiement par carte de l'abonnement est géré par <strong>Google Play</strong>. Carnet IA ne voit jamais votre numéro de carte.</li>
-    <li>Le paiement par mobile money (Orange Money, Moov Money, Wave) se fait en dehors de l'application, directement avec Wahab Couture, qui active ensuite votre abonnement.</li>
-  </ul>
-</section>
+<h2>2. Why we use this data</h2>
+<ul>
+  <li>To run the app and its modules.</li>
+  <li>To back up your data online so you can find it on another phone.</li>
+  <li>To share with your employees and assistant only what you choose to send them.</li>
+  <li>To manage your subscription and purchases.</li>
+  <li>To fix errors and keep the app secure.</li>
+</ul>
+<p>We <strong>do not sell</strong> your data, we <strong>show no ads</strong>, and we do not use your data for advertising.</p>
 
-<section>
-  <h2>7. Autorisations demandées sur le téléphone</h2>
-  <ul>
-    <li><strong>Appareil photo et photos</strong> : pour les tissus, les modèles, le logo et les mesures photo IA ;</li>
-    <li><strong>Micro</strong> : pour enregistrer les recommandations vocales des clients ;</li>
-    <li><strong>Notifications</strong> : pour les rappels de livraison et de fin d'abonnement.</li>
-  </ul>
-  <p>Vous pouvez refuser ou retirer ces autorisations dans les réglages du téléphone ; seule la fonction concernée ne marchera plus.</p>
-</section>
+<h2>3. Where your data is stored</h2>
+<p>Your data is stored on your phone and backed up in Google Firebase services (Authentication, Cloud Firestore) over encrypted connections. Only you and the people of your workshop you grant access to can view it.</p>
 
-<section>
-  <h2>8. Durée de conservation et suppression</h2>
-  <ul>
-    <li>Les données sont gardées tant que le compte existe.</li>
-    <li>Vous pouvez supprimer votre compte et toutes vos données à tout moment : voir la page <a href="suppression.html">Supprimer mon compte Carnet IA</a>.</li>
-    <li>Après la suppression, seules les dates de l'essai et de l'abonnement sont gardées, sans nom ni contact, pour éviter qu'un même compte reçoive plusieurs essais gratuits.</li>
-  </ul>
-</section>
+<h2>4. Third-party services</h2>
+<p>Carnet IA uses Google services: Firebase Authentication, Cloud Firestore, Firebase AI Logic, Firebase Crashlytics, Firebase App Check, Google Play Billing and Google Play Integrity. These services process data under Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
 
-<section>
-  <h2>9. Enfants</h2>
-  <p>Carnet IA est destinée aux professionnels de la couture adultes. Les mesures d'enfants sont saisies par l'atelier pour ses propres clients, avec l'accord des parents.</p>
-</section>
+<h2>5. Your employees and assistant</h2>
+<p>The workshop owner can invite employees and an assistant with a workshop code. An employee never sees your clients' names, phone numbers or prices; they only see their own work and what you send them. The owner can remove access at any time.</p>
 
-<section>
-  <h2>10. Vos droits</h2>
-  <p>Vous pouvez demander à consulter, corriger ou supprimer vos données en écrivant à <a href="mailto:wahabstyle54@gmail.com">wahabstyle54@gmail.com</a>. Nous répondons dans un délai de 30 jours.</p>
-</section>
+<h2>6. Retention</h2>
+<p>Your data is kept as long as your account exists. When a subscription ends, access is limited but your data is kept so you can find it again if you resubscribe. When you delete your account, your data is erased.</p>
 
-<section>
-  <h2>11. Modifications</h2>
-  <p>Cette politique peut être mise à jour. La date en haut de la page indique la dernière version.</p>
-</section>
+<h2>7. Deleting your account and data</h2>
+<ul>
+  <li><strong>In the app</strong>: menu ☰ → <em>My account</em> → <em>Delete my account</em>.</li>
+  <li><strong>By email</strong>: write to <a href="mailto:wahabstyle54@gmail.com">wahabstyle54@gmail.com</a> from the phone number or address linked to your account, with the subject “Carnet IA account deletion”. Deletion is completed within 30 days.</li>
+</ul>
+<p>You can also request a copy or correction of your data at the same address.</p>
 
+<h2>8. Children</h2>
+<p>Carnet IA is intended for tailoring professionals aged 18 and over. The app is not directed at children.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy. The last update date is shown at the top of the page.</p>
+
+<h2>10. Contact</h2>
+<p>Wahab Couture — Bamako, Mali<br>
+Email: <a href="mailto:wahabstyle54@gmail.com">wahabstyle54@gmail.com</a></p>
+</section>
 </main>
-<footer>© 2026 Wahab Couture — Carnet IA</footer>
 </body>
 </html>
